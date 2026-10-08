@@ -13,16 +13,16 @@ Buka URL lokal yang ditampilkan server (umumnya `http://localhost:5173`). Server
 
 Jika Vite tidak bisa berjalan di Android/VSCodroid karena pembatasan executable native, jalankan `node preview-server.mjs` sebagai alternatif preview. Preview ini membutuhkan koneksi internet untuk memuat React dan ikon dari CDN.
 
-## Deploy ke GitHub Pages
+## Hosting di GitHub Pages
 
-Workflow GitHub Actions akan otomatis membangun dan menerbitkan aplikasi ke GitHub Pages setiap kali ada push ke branch `master` atau `main`.
+Setelah perubahan project di-push ke branch `main`, GitHub Actions akan membangun dan menerbitkan aplikasi secara otomatis.
 
-1. Push repository ini ke GitHub.
-2. Buka **Settings → Pages** pada repository.
-3. Pada **Build and deployment → Source**, pilih **GitHub Actions**.
-4. Buka tab **Actions** dan tunggu workflow **Deploy to GitHub Pages** selesai.
+1. Buka repository di GitHub, lalu pilih **Settings → Pages**.
+2. Pada bagian **Build and deployment**, pilih **GitHub Actions** sebagai sumber.
+3. Buka tab **Actions** dan tunggu workflow **Deploy to GitHub Pages** selesai.
+4. Alamat aplikasi akan muncul di **Settings → Pages**. Untuk repository `stockly`, alamatnya biasanya `https://askai131092-art.github.io/stockly/`.
 
-Untuk repository ini, alamat publiknya adalah `https://installgjm-cyber.github.io/stockly/`. File workbook Excel tidak disimpan di repository; impor file XLSX dilakukan langsung dari aplikasi.
+Workbook Excel tidak disertakan di repository; impor file XLSX langsung melalui aplikasi.
 
 ## Fitur
 
