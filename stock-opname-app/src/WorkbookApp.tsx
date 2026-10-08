@@ -53,7 +53,8 @@ export default function WorkbookApp() {
 
   const loadAttachedWorkbook = async () => {
     try {
-      const response = await fetch('/SO%20by%20SN%20Master%20Toko.xlsx')
+      const workbookUrl = new URL('SO%20by%20SN%20Master%20Toko.xlsx', document.baseURI)
+      const response = await fetch(workbookUrl)
       if (!response.ok) return
       const file = new File([await response.arrayBuffer()], 'SO by SN Master Toko.xlsx', { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' })
       const transfer = new DataTransfer()
